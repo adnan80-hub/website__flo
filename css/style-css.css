@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif !important;
+    height: 95vh;
+    /* display: grid;
+    place-items: center; */
+    background-color: #000 !important;
+    /* background-image: url("../images/13347.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    overflow: hidden;
+}
+
+
+.flo .logo-flo ,
+.flo .logo-flo-green ,
+.flo .logo-flo-blue {
+    color: rgb(255, 17, 0);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.flo .logo-flo-green {
+    color: greenyellow;
+}
+
+.flo .logo-flo-blue {
+    color: rgb(0, 81, 255);
+}
+
+.flo ul {
+    display: flex;
+}
+
+.flo ul li a {
+    padding: 15px 35px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.flo ul li a:hover {
+    color: #000;
+
+}
+
+input {
+    display: none;
+}
+
+.flo label i {
+    display: none;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .flo label i {
+        display: block;
+    }
+
+    .flo ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 0px;
+        display: block;
+        background-color: rgb(255, 17, 0);
+        transition: 0.8s;
+        overflow: hidden;
+    }
+
+    .flo ul li a {
+        color: #000;
+    }
+    input:checked + label ul {
+        height: 210px;
+    }
+}
+
+/* =============== section page ============= */
+
+
+.section .container {
+    height: 80vh;
+}
+
+.section .txt-flo h1 {
+    width: 100%;
+    color: #fff;
+    font-size: 35px;
+    line-height: 3rem;
+}
+
+.section .txt-flo h1 span ,
+.section .txt-flo h1 .green-span ,
+.section .txt-flo h1 .blue-span {
+    background-color: rgb(255, 17, 0);
+    color: #000;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.section .txt-flo h1 .green-span {
+    background-color: greenyellow!important;
+}
+
+.section .txt-flo h1 .blue-span {
+    background-color: rgb(0, 81, 255);
+}
+
+.section .txt-flo p {
+    color: #fff;
+}
+
+.section .img-flo img ,
+.section .img-flo-green img ,
+.section .img-flo-blue img{
+    animation: up-down 4s linear infinite;
+}
+
+.button-flo ,
+.button-flo-green,
+.button-flo-blue {
+    width: 300px;
+}
+
+.button-flo div:first-child ,
+.button-flo-green div:first-child ,
+.button-flo-blue div:first-child {
+    flex: 2;
+    padding: 10px 25px;
+    background-color: rgb(255, 17, 0);
+    color: #000;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.button-flo-green div:first-child {
+    background-color: greenyellow;
+}
+
+.button-flo-blue div:first-child {
+    background-color: rgb(0, 81, 255);
+}
+
+.button-flo div:last-child ,
+.button-flo-green div:last-child ,
+.button-flo-blue div:last-child {
+    padding: 10px 25px;
+    border:2px solid rgb(255, 17, 0);
+    color: rgb(255, 17, 0);
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.button-flo-green div:last-child {
+    border:2px solid greenyellow;
+    color: greenyellow;
+}
+
+.button-flo-blue div:last-child {
+    border: 2px solid rgb(0, 81, 255);
+    color: rgb(0, 81, 255);
+}
+
+@keyframes up-down {
+    0% ,
+    100% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+}
+
+/* choose flo */
+
+.txt-flo .choose-flo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.choose-flo a .img-orign,
+.choose-flo a .img-green ,
+.choose-flo a .img-blue {
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/domino-studio-164_6wVEHfI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    border: 2px solid #fff;
+}
+
+.choose-flo a .img-green {
+    background-image: url("../images/usama-akram-kP6knT7tjn4-unsplash.jpg");
+}
+
+.choose-flo a .img-blue {
+    background-image: url("../images/cool-nike-shoes-golden-ball-blue-background-wallpaper-preview.jpg");
+}
+
+.img-flo::before {
+    content: "";
+    position: absolute;
+    top: -1050px;
+    right: -1300px;
+    width: 1800px;
+    height: 1800px;
+    background-color: rgb(255, 17, 0);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.img-flo-green::before {
+    content: "";
+    position: absolute;
+    top: -1050px;
+    right: -1300px;
+    width: 1800px;
+    height: 1800px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.img-flo-blue::before {
+    content: "";
+    position: absolute;
+    top: -1050px;
+    right: -1300px;
+    width: 1800px;
+    height: 1800px;
+    background-color: rgb(0, 81, 255);
+    border-radius: 50%;
+    z-index: -1;
+}
